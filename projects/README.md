@@ -1,8 +1,8 @@
 # projects · 实战工程
 
-## 串口数据采集 — 队列消息处理器模板
+## SerialDataAcq — 队列消息处理器模板
 
-- **来源**：桌面 `串口数据采集` 文件夹（2026-08-04 由 `LINE/1.lvproj` 更名）
+- **来源**：桌面 `SerialDataAcq` 文件夹（2026-08-04 由 `LINE/1.lvproj` 更名，串口数据采集）
 - **架构**：NI「Queued Message Handler」模板 — UI事件循环 + 消息处理循环，Enqueue/Dequeue 传递消息
 - **已实现**：`VISA Configure Serial Port (Instr)` 串口配置 + 队列内持续采集（对应 CHECKLIST 阶段3）
 - **远程配置**：`.aliases` 含 VI Server 远程别名 `我的电脑 = "10.100.48.150"`（远程部署用，勿删）
