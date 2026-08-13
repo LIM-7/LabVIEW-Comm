@@ -1,4 +1,4 @@
-# projects · 实战工程
+﻿# projects · 实战工程
 
 ## SerialDataAcq — 队列消息处理器模板
 
@@ -13,3 +13,15 @@
   - `documentation/` — NI 模板自带教程（可删除，不影响运行）
 
 > ⏭️ 下一步里程碑：解析 STM32 端 **AA55 协议帧**（CHECKLIST 阶段3 最后一项）
+
+
+## TempHumidityMonitor — 温湿度监控采集界面
+
+- **来源**：桌面 `Labview\练习\温湿度监控`（2026-08-13）
+- **用途**：采集界面制作任务——温度/湿度监控界面（智能农业上位机方向）
+- **架构**：状态机类型定义 `SubVI\状态机.ctl` + 主程序 `main.vi`（含标准错误处理，LabVIEW 2025 Q1）
+- **结构**：
+  - `main.vi` — 主程序（前面板 + 程序框图）
+  - `SubVI\状态机.ctl` — 状态机 typedef 控件
+- **打开方式**：LabVIEW 2025 Q1 直接打开 `main.vi`（独立 VI，暂未建 .lvproj）
+- **命名说明**：工程目录英文命名 `TempHumidityMonitor`（遵循仓库英文命名规则）；VI/ctl 内部文件名保持原样，避免破坏 VI 引用关系
